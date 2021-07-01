@@ -1,21 +1,21 @@
 package parcialFinal.visitor;
 
-public class Cochabamba implements IDepartamento{
+public class Cochabamba implements IDepartamento {
     String nombre;
     int numeroProvincias;
     int numeroHabitantes;
     String clima;
     double dineroTurismo;
 
-    public Cochabamba(String nombre, int numeroProvincias, int numeroHabitantes,String clima, double dineroTurismo){
-        this.nombre="Cochabamba";
-        this.numeroProvincias= numeroProvincias;
-        this.numeroHabitantes=numeroHabitantes;
-        this.clima=clima;
-        this.dineroTurismo=dineroTurismo;
+    public Cochabamba(int numeroProvincias, int numeroHabitantes, String clima, double dineroTurismo) {
+        this.nombre = "La Paz";
+        this.numeroProvincias = numeroProvincias;
+        this.numeroHabitantes = numeroHabitantes;
+        this.clima = clima;
+        this.dineroTurismo = dineroTurismo;
     }
 
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
 
@@ -59,4 +59,5 @@ public class Cochabamba implements IDepartamento{
     public void visitado(ITurista turista) {
         turista.visita(this);
     }
+
 }

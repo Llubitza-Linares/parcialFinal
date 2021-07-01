@@ -7,6 +7,12 @@ public class Turista implements ITurista{
     private double dinero;
     private int ci;
 
+    public Turista(String nombre, int dinero, int ci) {
+        this.nombre=nombre;
+        this.dinero=dinero;
+        this.ci=ci;
+    }
+
     @Override
     public void visita(LaPaz laPaz) {
         System.out.println("Me encuentro visitando La Paz");
