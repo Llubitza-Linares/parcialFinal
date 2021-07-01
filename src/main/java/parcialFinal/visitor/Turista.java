@@ -41,7 +41,10 @@ public class Turista implements ITurista{
     @Override
     public void showInfo() {
 
-        System.out.println();
+        System.out.println("********Info Turista");
+        System.out.println("El nombre del turista es"+ nombre);
+        System.out.println("El Ci del turista es"+ci);
+        System.out.println("El monto de dinero es"+dinero);
     }
 
     public String getNombre() {

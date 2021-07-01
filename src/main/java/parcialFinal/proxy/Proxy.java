@@ -1,5 +1,5 @@
 package parcialFinal.proxy;
 
-public class Cliente {
+public class Proxy {
 
 }

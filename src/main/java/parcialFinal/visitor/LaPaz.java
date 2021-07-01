@@ -1,6 +1,6 @@
 package parcialFinal.visitor;
 
-public class LaPaz {
+public class LaPaz implements IDepartamento {
         String nombre;
         int numeroProvincias;
         int numeroHabitantes;
@@ -55,6 +55,7 @@ public class LaPaz {
                 this.dineroTurismo = dineroTurismo;
         }
 
+        @Override
         public void visitado(ITurista turista) {
                 turista.visita(this);
         }
