@@ -48,9 +48,10 @@ public class Turista implements ITurista{
     public void showInfo() {
 
         System.out.println("********Info Turista");
-        System.out.println("El nombre del turista es"+ nombre);
-        System.out.println("El Ci del turista es"+ci);
-        System.out.println("El monto de dinero es"+dinero);
+        System.out.println("El nombre del turista es: "+ nombre);
+        System.out.println("El Ci del turista es: "+ci);
+        System.out.println("El monto de dinero es: "+dinero);
+        System.out.println("*****************");
     }
 
     public String getNombre() {

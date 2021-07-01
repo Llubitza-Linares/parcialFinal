@@ -7,7 +7,7 @@ public class LaPaz implements IDepartamento {
         String clima;
         double dineroTurismo;
 
-        public LaPaz(String nombre, int numeroProvincias, int numeroHabitantes, String clima, double dineroTurismo) {
+        public LaPaz(int numeroProvincias, int numeroHabitantes, String clima, double dineroTurismo) {
                 this.nombre = "La Paz";
                 this.numeroProvincias = numeroProvincias;
                 this.numeroHabitantes = numeroHabitantes;
@@ -59,4 +59,4 @@ public class LaPaz implements IDepartamento {
         public void visitado(ITurista turista) {
                 turista.visita(this);
         }
-}
+ }

@@ -23,14 +23,14 @@ public class Proxy implements ILogin{
 
     @Override
     public void ingresar(String usuario, String password) {
-        for (Usuarios u : usuarios) {
-            if (u.getUsuario().equals(usuario)) {
-                if (u.getContrasena().equals(password)) {
-                    if (u.id % 2 == 0) {
-                        System.out.println("El servidor 2 esta realizando una acción");
+        for (Usuarios usuarios : usuarios) {
+            if (usuarios.getUsuario().equals(usuario)) {
+                if (usuarios.getContrasena().equals(password)) {
+                    if (usuarios.id % 2 == 0) {
+                        System.out.println("El servidor 2 se encuentra ocupado");
                         servidor2.ingresar(usuario, password);
                     } else {
-                        System.out.println("El servidor 1 está realizando una acción");
+                        System.out.println("El servidor 1 se encuentra ocupado");
                         servidor1.ingresar(usuario, password);
                     }
                 } else {

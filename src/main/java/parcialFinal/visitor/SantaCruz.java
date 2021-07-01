@@ -1,21 +1,21 @@
 package parcialFinal.visitor;
 
-public class SantaCruz implements IDepartamento{
+public class SantaCruz implements IDepartamento {
     String nombre;
     int numeroProvincias;
     int numeroHabitantes;
     String clima;
     double dineroTurismo;
 
-    public SantaCruz(String nombre, int numeroProvincias, int numeroHabitantes,String clima, double dineroTurismo){
-        this.nombre="Santa Cruz" ;
-        this.numeroProvincias= numeroProvincias;
-        this.numeroHabitantes=numeroHabitantes;
-        this.clima=clima;
-        this.dineroTurismo=dineroTurismo;
+    public SantaCruz(int numeroProvincias, int numeroHabitantes, String clima, double dineroTurismo) {
+        this.nombre = "Santa Cruz";
+        this.numeroProvincias = numeroProvincias;
+        this.numeroHabitantes = numeroHabitantes;
+        this.clima = clima;
+        this.dineroTurismo = dineroTurismo;
     }
 
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
 
@@ -59,4 +59,5 @@ public class SantaCruz implements IDepartamento{
     public void visitado(ITurista turista) {
         turista.visita(this);
     }
+
 }
